@@ -1,2 +1,2 @@
-# WaywardGam4es.github.io
+# WaywardGames.github.io
 Webpage for Wayward Games 
