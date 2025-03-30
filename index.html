@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayward Games - Leafblade</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            background-color: #333;            
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .header img {
+            height: 100px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero {
+            background: url('Images/background.png') no-repeat center center/cover;
+            padding: 150px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            box-sizing: border-box;            
+            height: 500px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.0);
+            padding: 0px 5px;
+            border-radius: 5px;
+            width: fit-content;
+        }
+        .hero p {
+            background: rgba(0, 0, 0, 0.1);            
+            font-weight: bold;            
+            padding: 5px 5px;
+            border-radius: 5px;
+            width: 500px;
+            word-wrap: break-word;
+            text-align: center;            
+            margin-bottom: -100px;
+        }
+        .swiper {
+            width: 100%;
+            height: 500px;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+        }
+        .footer a {
+            color: #ff6600;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Images/waywardlogo.png" alt="Wayward Games Logo">
+    </div>
+    
+    
+        <div class="hero">
+            <h1>Leafblade</h1>
+            <p>An action RPG in which players befriend and take care of monsters in their farm to gain powerful allies in combat</p>
+        </div>
+
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="Images/Screenshots/screenshot_1.png" alt="Screenshot 1"></div>
+                <div class="swiper-slide"><img src="Images/Screenshots/screenshot_2.png" alt="Screenshot 2"></div>
+                <div class="swiper-slide"><img src="Images/Screenshots/screenshot_3.gif" alt="Screenshot 3"></div>
+                <div class="swiper-slide"><img src="Images/Screenshots/screenshot_4.gif" alt="Screenshot 3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+        <a href="https://store.steampowered.com/app/2887740/Leafblade/" class="btn">Wishlist!</a>
+    </div>
+    
+    <div class="footer">
+        <p>Contact us: 
+            <a href="https://x.com/LeafBladeStudio"><i class="fab fa-twitter"></i>Twitter</a> | 
+            <a href="leafbladestudio@gmail.com"><i class="fas fa-envelope"></i>Email</a> | 
+            <a href="https://bsky.app/profile/leafbladestudio.bsky.social"><i class="fas fa-globe"></i>Bluesky</a>
+        </p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
